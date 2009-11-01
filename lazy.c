@@ -19,7 +19,7 @@ xmalloc(size_t size)
 {
 	void *p;
 	
-	p = memalign(256, size);
+	p = memalign(4, size);
 	assert(p);
 
 	return p;
